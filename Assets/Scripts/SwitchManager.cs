@@ -82,7 +82,7 @@ public class SwitchManager : MonoBehaviour
             hairID = hairID - 1;
             if (hairID < 0)
                 hairID = hair.GetInteger("Hair_Count") - 1;
-            body.SetInteger("ID", hairID);
+            hair.SetInteger("ID", hairID);
             currentTime = cooldown;
         }
     }
