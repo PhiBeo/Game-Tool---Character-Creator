@@ -130,7 +130,7 @@ public class MergeSprite : MonoBehaviour
             Directory.CreateDirectory(dirPath);
         }
 
-        File.WriteAllBytes(dirPath + "/R" + Random.Range(0, 100000) + ".png", bytes);
+        File.WriteAllBytes(dirPath + "/S" + Random.Range(0, 100000) + ".png", bytes);
 
         Debug.Log(bytes.Length / 1024 + "Kb was saved as: " + dirPath);
 
